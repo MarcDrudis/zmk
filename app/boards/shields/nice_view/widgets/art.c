@@ -12,12 +12,12 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_BALLOON
-#define LV_ATTRIBUTE_IMG_BALLOON
+#ifndef LV_ATTRIBUTE_IMG_qiskitcat
+#define LV_ATTRIBUTE_IMG_qiskitcat
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BALLOON uint8_t
-    balloon_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_qiskitcat uint8_t
+    qiskitcat_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0xff, 0xff, 0xff, 0xff, /*Color of index 0*/
         0x00, 0x00, 0x00, 0xff, /*Color of index 1*/
@@ -96,12 +96,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BALLOON u
   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xf0, 
 };
 
-const lv_img_dsc_t balloon = {
+const lv_img_dsc_t qiskitcat = {
     .header.cf = LV_IMG_CF_INDEXED_1BIT,
     .header.always_zero = 0,
     .header.reserved = 0,
     .header.w = 140,
     .header.h = 68,
     .data_size = 1232,
-    .data = balloon_map,
+    .data = qiskitcat_map,
 };
